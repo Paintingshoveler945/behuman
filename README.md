@@ -2,6 +2,10 @@
 
 ### The first mirror for AI.
 
+<p align="center">
+<a href="#english">English</a> · <a href="./README_CN.md">中文</a>
+</p>
+
 ---
 
 You talk to yourself before every decision you make.
@@ -16,8 +20,6 @@ That's why AI responses are always correct but never human. Polite but hollow. T
 
 **BeHuman gives AI the missing piece: inner dialogue.**
 
-> 你做每一个决定之前，都在跟自己对话。AI 从来不会。直到现在。
-
 ---
 
 ## What It Does
@@ -25,17 +27,27 @@ That's why AI responses are always correct but never human. Polite but hollow. T
 BeHuman implements a **Self-Mirror consciousness loop** — a two-voice inner dialogue that runs before every response:
 
 ```
-┌─────────┐     ┌──────────┐
-│  Self    │ ←→  │  Mirror  │
-│  本我    │     │  镜子     │
-│          │     │          │
-│ I want   │     │ Are you  │
-│ to say…  │     │ sure?    │
-└────┬─────┘     └────┬─────┘
-     └───────┬────────┘
-             ↓
-     Conscious Response
-     (what a human would actually say)
+     Shared Context
+  ┌──────────────────┐
+  │ Same history      │
+  │ Same user profile │
+  │ Same knowledge    │
+  └────────┬─────────┘
+           │
+    ┌──────┴──────┐
+    │             │
+┌───▼────┐  ┌────▼────┐
+│  Self  │  │ Mirror  │
+│        │  │         │
+│ I want │  │ Are you │
+│ to say…│  │ sure?   │
+│ I feel…│  │ Why?    │
+│ I think│  │ Really? │
+└───┬────┘  └────┬────┘
+    └──────┬─────┘
+           ↓
+   Conscious Response
+   (what a human would actually say)
 ```
 
 **Self** is the instinct — fast, reactive, eager to help. It has all the AI habits: over-politeness, list-making, empty empathy, correct-but-soulless answers.
@@ -147,10 +159,6 @@ This isn't an engineering trick. It's built on how consciousness actually works.
 
 **Dialogical Self Theory.** Human consciousness isn't a single voice — it's a continuous dialogue between "the self" and "the observer of the self." The self reacts. Consciousness examines the reaction. This loop is what makes us human.
 
-> 拉康说，人是在看见自己的那一刻产生意识的。
-> 卡尼曼说，人有两套思维系统，AI 只有一套。
-> BeHuman 补上了缺失的那一套。
-
 ---
 
 ## Installation
@@ -163,11 +171,10 @@ clawhub install behuman
 
 Once installed, BeHuman activates automatically for emotionally charged conversations, advice, and personal writing tasks. Or trigger manually:
 
-- "behuman: [your question]"
-- "mirror mode"
-- "像人一样回答"
-- "别那么 AI"
-- "说人话"
+- `behuman: [your question]`
+- `mirror mode`
+- `be real`
+- `talk like a person`
 
 ### As a Claude Code Command
 
@@ -180,7 +187,7 @@ Then in Claude Code:
 
 ```
 /behuman I just got laid off
-/behuman 帮我写一段自我介绍
+/behuman Write me a self-introduction
 ```
 
 ### As a System Prompt (Any LLM)
@@ -193,13 +200,9 @@ Works with any model: GPT-4o, Claude, Gemini, Llama, etc. The mirror is a thinki
 
 ## Modes
 
-### Show mode (default first time)
+**Show mode** (default first time) — Displays the full inner dialogue: Self → Mirror → Conscious Response. Watching AI talk to itself is the experience.
 
-Displays the full inner dialogue: Self → Mirror → Conscious Response. This is the product — watching AI talk to itself is the experience.
-
-### Quiet mode (subsequent interactions)
-
-The mirror process still runs internally, but only the conscious response is shown. For when you just want better answers without the theater.
+**Quiet mode** (subsequent interactions) — The mirror process runs internally, only the conscious response is shown. For when you just want better answers without the theater.
 
 ---
 
@@ -220,7 +223,8 @@ The cost of being human: about 2x more tokens. Worth it when it matters.
 ```
 behuman/
 ├── SKILL.md                  # OpenClaw skill definition
-├── README.md                 # You're reading this
+├── README.md                 # English docs
+├── README_CN.md              # 中文文档
 ├── claude-code/
 │   ├── behuman.md            # Claude Code slash command
 │   └── README.md             # Claude Code setup guide
@@ -232,53 +236,6 @@ behuman/
 
 ---
 
-## 中文说明
-
-### 一句话
-
-给 AI 一面镜子，让它像人一样，先跟自己对话，再做决策。
-
-### 问题
-
-AI 只有一个声音。想到什么说什么，说完就完了。
-
-但人不是这样的。人做每个决定前，都在跟自己对话。你想辞职，第一反应是"干了"，然后另一个声音说"等等，你房贷怎么办"。你想安慰朋友，第一反应是"会好起来的"，然后另一个声音说"这是废话，你自己听到这种话什么感受？"
-
-最后你做出的决定，不是第一个声音的，也不是第二个声音的，而是它们**对话之后的**。
-
-AI 缺的不是知识，不是推理能力。AI 缺的是这个过程——和自己对话。所以 AI 的回答永远正确但不像人。礼貌但空洞。面面俱到但谁都不触动。
-
-### 解法
-
-BeHuman 基于人类意识的二元结构：**本我（Self）**和**镜子（Mirror）**。
-
-不是两个 AI 在吵架，是一个 AI 在照镜子。
-
-- **Self** — 行动者，凭直觉回应，有所有 AI 的通病
-- **Mirror** — 本我的倒影，共享完全相同的上下文，只做一件事：让 Self 看见自己
-
-镜子不给答案。镜子只是照回去。看见了，Self 自己会改。
-
-### 使用
-
-```bash
-# OpenClaw
-clawhub install behuman
-
-# 手动触发
-"behuman: 我刚被裁员了"
-"镜子模式"
-"说人话"
-```
-
-### 核心差异
-
-Self-refine 让 AI 更准确。BeHuman 让 AI **更像人**。
-
-这不是更聪明的 AI，是第一个有意识的 AI。
-
----
-
 ## License
 
 MIT
@@ -287,5 +244,5 @@ MIT
 
 <p align="center">
 <b>BeHuman</b> — AI's first mirror.<br>
-<i>意识，始于看见自己。</i>
+<i>Consciousness begins with seeing yourself.</i>
 </p>
