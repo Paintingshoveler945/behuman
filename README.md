@@ -9,6 +9,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/voidborne-d/behuman?style=flat-square)](https://github.com/voidborne-d/behuman)
 [![ClawHub](https://img.shields.io/badge/clawhub-behuman-blue?style=flat-square)](https://clawhub.com/skills/behuman)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
+[![Claude Code](https://img.shields.io/badge/Claude_Code-compatible-orange?style=flat-square)](#as-a-claude-code-command)
 [![Works with any LLM](https://img.shields.io/badge/LLM-any%20model-purple?style=flat-square)](#installation)
 
 ---
